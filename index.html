@@ -16,11 +16,12 @@
           <legend>Dados pessoais</legend>
 
           <label for="userName">Nome: </label>
-          <input type="text" name="userName" required />
+          <input type="text" name="userName" id="userName" required />
           <br />
 
           <label for="userAge">Idade: </label>
           <input
+            id="userAge"
             type="number"
             name="userAge"
             max="100"
@@ -31,16 +32,17 @@
           <br />
 
           <label for="userBirthDate">Data de nascimento: </label>
-          <input type="date" name="userBirthDate" />
+          <input type="date" name="userBirthDate" id="userBirthDate" />
           <br />
 
           <label for="userEmail">E-mail: </label>
-          <input type="email" name="userEmail" required />
+          <input type="email" name="userEmail" id="userEmail" required />
           <br />
 
           <label for="userPhoneNumber">Telefone: </label>
           <input
             type="tel"
+            id="userPhoneNumber"
             name="userPhoneNumber"
             pattern="[0-9]{11}"
             placeholder="Ex: 00000000000"
@@ -48,7 +50,7 @@
           <br />
 
           <label for="userImage">Upload de foto: </label>
-          <input type="file" name="userImage" accept="image/*" />
+          <input type="file" name="userImage" id="userImage" accept="image/*" />
           <br />
         </fieldset>
 
@@ -62,7 +64,7 @@
             name="userGender"
             value="feminino"
           />
-          <label for="userGender">Feminino</label>
+          <label for="feminino">Feminino</label>
 
           <input
             id="masculino"
@@ -70,10 +72,10 @@
             name="userGender"
             value="masculino"
           />
-          <label for="userGender">Masculino</label>
+          <label for="masculino">Masculino</label>
 
-          <input value="id" type="radio" name="userGender" value="outro" />
-          <label for="userGender">Outro</label>
+          <input id="outro" type="radio" name="userGender" value="outro" />
+          <label for="outro">Outro</label>
 
           <input
             id="naoInformado"
@@ -81,7 +83,7 @@
             name="userGender"
             value="naoInformado"
           />
-          <label for="userGender">Prefiro não informar</label>
+          <label for="naoInformado">Prefiro não informar</label>
 
           <br />
 
@@ -132,7 +134,7 @@
           <br />
 
           <label for="userCity">Cidade:</label>
-          <input name="userCity" type="text" />
+          <input id="userCity" name="userCity" type="text" />
         </fieldset>
 
         <fieldset>
