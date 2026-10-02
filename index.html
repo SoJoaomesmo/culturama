@@ -155,20 +155,57 @@
 
           <br />
 
-          <label for="musicalStyle">Estilo musical</label>
+          <label for="userMusicalStyle">Estilo musical</label>
           <input
-            id="musicalStyle"
-            name="musicalStyle"
+            id="userMusicalStyle"
+            name="userMusicalStyle"
             type="text"
             list="styleType"
           />
           <datalist id="styleType">
-            <option value="Rock" />
-            <option value="Forró" />
-            <option value="Samba" />
-            <option value="Gaúcho" />
-            <option value="Clássica" />
+            <option value="Rock"></option>
+            <option value="Forró"></option>
+            <option value="Samba"></option>
+            <option value="Gaúcho"></option>
+            <option value="Clássica"></option>
           </datalist>
+
+          <br />
+
+          <label for="userFavoriteColor">Cor favorita: </label>
+          <input type="color" name="userFavoriteColor" id="userFavoriteColor" />
+        </fieldset>
+
+        <fieldset>
+          <legend>Comentários</legend>
+
+          <p>O que achou do nosso serviço?</p>
+
+          <input id="otimo" type="radio" name="userFeedback" value="otimo" />
+          <label for="otimo">Ótimo</label>
+
+          <input id="bom" type="radio" name="userFeedback" value="bom" />
+          <label for="bom">Bom</label>
+
+          <input
+            id="regular"
+            type="radio"
+            name="userFeedback"
+            value="regular"
+          />
+          <label for="regular">Regular</label>
+
+          <input id="ruim" type="radio" name="userFeedback" value="ruim" />
+          <label for="ruim">Ruim</label>
+
+          <br />
+
+          <p>Deixe seu comentário:</p>
+          <textarea
+            name="userComment"
+            id="userComment"
+            placeholder="Digite aqui sua opinião..."
+          ></textarea>
         </fieldset>
 
         <button type="submit">Enviar</button>
