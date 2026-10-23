@@ -20,6 +20,8 @@ h1 {
 
 main {
   width: 100%;
+  min-height: 100vh;
+  align-content: center;
   max-width: 700px;
   margin: 0 auto;
 }
@@ -116,4 +118,11 @@ button[type="reset"]:hover {
   border-color: #ff0000;
   background-color: #ff0000;
   color: #ffffff;
+}
+
+main h1:not(header h1) {
+  color: #00ff00;
+  font-size: 96px;
+  text-align: center;
+  margin: auto;
 }
